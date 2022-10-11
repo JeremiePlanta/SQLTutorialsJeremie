@@ -1,0 +1,2 @@
+SELECT stadt
+FROM Kunde
