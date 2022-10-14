@@ -6,14 +6,15 @@ CREATE TABLE Kunde(
         Nachname varchar(64),
         Strassenname varchar(64),
         Hausnummer INTEGER,
-        Postleitzahl INTEGER
+        Postleitzahl INTEGER,
+        Ort varchar(64)
 );
 
-INSERT INTO Kunde(Kundennummer, Vorname, Nachname, Strassenname, Hausnummer, Postleitzahl)
-VALUES ('1','John', 'Doe', 'Kartoffel','7','66798'),
-       ('2','John', 'Hank', 'Sieb','14','66798'),
-       ('3','Lauch', 'Thim', 'Kartoffel','8','66456'),
-       ('4','Karl', 'Einstein', 'Lemone','7','66898');
+INSERT INTO Kunde(Kundennummer, Vorname, Nachname, Strassenname, Hausnummer, Postleitzahl, Ort)
+VALUES ('1','John', 'Doe', 'Kartoffel','7','66798','Wallerfangen'),
+       ('2','John', 'Hank', 'Sieb','14','66798','Wallerfangen'),
+       ('3','Lauch', 'Thim', 'Kartoffel','8','66456','Berlin'),
+       ('4','Karl', 'Einstein', 'Lemone','7','66898','Neunkirchen');
 
 DROP TABLE IF EXISTS Artikel CASCADE;
        
