@@ -1,0 +1,1 @@
+DELETE FROM Bestellung WHERE Anzahl = '34';
